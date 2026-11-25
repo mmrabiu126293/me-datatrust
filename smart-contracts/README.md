@@ -1,13 +1,15 @@
-# Sample Hardhat Project
+# ME DataTrust: Smart Contracts
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.
+Solidity contracts for ME DataTrust, a data verification platform built on ME Network.
 
-Try running some of the following tasks:
+The `DataTrustRegistry` contract stores dataset fingerprints (SHA-256 hashes) on-chain so anyone can later check whether a file has been modified since it was registered. Datasets themselves are never stored on-chain.
 
-```shell
-npx hardhat help
+## Setup
+
+npm install
+npx hardhat compile
 npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat ignition deploy ./ignition/modules/Lock.ts
-```
+
+## Status
+
+In development for MetaEarth Hackathon 2026: HARBOR.
